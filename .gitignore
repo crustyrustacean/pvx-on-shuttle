@@ -1,0 +1,13 @@
+# .gitignore configuration
+
+# VS Code Settings
+.vscode
+
+# Environment Variables
+.env
+
+# Shuttle Environment Variables
+Secrets*.toml
+
+# Build Artifacts
+/target
