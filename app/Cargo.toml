@@ -24,4 +24,4 @@ tracing = "0.1"
 tracing_log_error = "0.1"
 serde = { version = "1", features = ["derive"] }
 serde-aux = "4"
-workspace_hack = { path = "../workspace_hack" }
+workspace_hack = { version = "0.1", path = "../workspace_hack" }

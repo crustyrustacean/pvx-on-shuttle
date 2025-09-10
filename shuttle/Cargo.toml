@@ -9,3 +9,4 @@ shuttle-runtime = "0.56.0"
 server = { path = "../server" }
 server_sdk = { path = "../server_sdk" }
 tracing = "0.1.41"
+workspace_hack = { version = "0.1", path = "../workspace_hack" }

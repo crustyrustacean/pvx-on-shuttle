@@ -507,7 +507,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2dff15bf788c671c1934e366d07e30c1814a8ef514e1af724a602e8a2fbe1b10"
 dependencies = [
  "futures-core",
- "futures-sink",
 ]
 
 [[package]]
@@ -515,12 +514,6 @@ name = "futures-core"
 version = "0.3.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "05f29059c0c2090612e8d742178b0580d2dc940c837851ad723096f87af6663e"
-
-[[package]]
-name = "futures-io"
-version = "0.3.31"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e5c1b78ca4aae1ac06c48a526a655760685149f0d465d21f37abfe57ce075c6"
 
 [[package]]
 name = "futures-macro"
@@ -551,13 +544,10 @@ version = "0.3.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9fa08315bb612088cc391249efdc3bc77536f16c91f6cf495e6fbe85b20a4a81"
 dependencies = [
- "futures-channel",
  "futures-core",
- "futures-io",
  "futures-macro",
  "futures-sink",
  "futures-task",
- "memchr",
  "pin-project-lite",
  "pin-utils",
  "slab",
@@ -2151,6 +2141,7 @@ dependencies = [
  "server_sdk",
  "shuttle-runtime",
  "tracing",
+ "workspace_hack",
 ]
 
 [[package]]
@@ -2273,9 +2264,6 @@ name = "smallvec"
 version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "67b1b7a3b5fe4f1376887184045fcf45c69e92af734b7aaddc05fb777b6fbd03"
-dependencies = [
- "serde",
-]
 
 [[package]]
 name = "socket2"
@@ -3324,23 +3312,22 @@ dependencies = [
 name = "workspace_hack"
 version = "0.1.0"
 dependencies = [
- "futures-channel",
- "futures-core",
- "futures-io",
- "futures-sink",
- "futures-task",
+ "chrono",
  "futures-util",
- "memchr",
- "percent-encoding",
- "proc-macro2",
- "quote",
+ "hyper",
+ "hyper-util",
+ "indexmap",
+ "num-traits",
  "reqwest",
  "serde",
- "serde_json",
- "smallvec",
- "stable_deref_trait",
+ "shuttle-common",
+ "socket2 0.6.0",
  "syn",
  "tokio",
+ "tracing",
+ "tracing-core",
+ "tracing-subscriber",
+ "zeroize",
 ]
 
 [[package]]
