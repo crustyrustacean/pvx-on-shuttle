@@ -1,11 +1,11 @@
 [package]
 name = "shuttle"
-version = "0.1.0"
+version.workspace = true
 edition.workspace = true
 
 [dependencies]
 pavex = "0.2.4"
-shuttle-runtime = "0.56.0"
+shuttle-runtime = "0.57.0"
 server = { path = "../server" }
 server_sdk = { path = "../server_sdk" }
 tracing = "0.1.41"

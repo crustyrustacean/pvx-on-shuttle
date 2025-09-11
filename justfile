@@ -3,6 +3,10 @@
 # use PowerShell instead of sh:
 set shell := ["powershell.exe", "-c"]
 
+# check the project
+check:
+    cargo px check
+
 # format code
 fmt:
   cargo fmt
